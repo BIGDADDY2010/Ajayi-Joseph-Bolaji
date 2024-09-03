@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-U-Compatible" content="IE-chrome">
+    <meta name="viewport" content="width=device-width, initial">
+    <title>Summer Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: gold;">
+    <h1>Summer Code</h1>
+    <nav>
+        <div class="logo">Big Daddy's co-operation</div>
+        <div class="nav-item">
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+            <a href="project.html">project</a>
+        </div>
+    </nav>
+<p>Try the experiment below</p>
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+<p style="font-size: 25px;">I want to write what i want to achieve in the next 5 years: <br>
+    Firstly, before i enter school which is the university, i want to learn forex which has to do with predicting whether prices will rise or fall <br><br>
+    I am already trading, but i am not yet very good and that is why i need to learn, so that i won't depend only on my parents for all the money that i need while in school<br><br>
+    I want to graduate from the University with a First class in computer science, after that i want to work in an organisation that i wiil be working from home and be making my trillions<br><br>
+    After that i want to do some personal things that i don't want to share <br><br>
+</p>
+<p><h2>Countdown of what i want to achieve in the next five years</h2></p>
+<h1 style="text-align: center;"><p id="demo" style="font-size: 50px;"></p>
+<script>
+    var countDownDate = new Date("August 31, 2029 15:15:2").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);</script></h1>
+</body>
+</html>
