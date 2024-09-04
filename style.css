@@ -14,7 +14,7 @@ nav {
     }
 
 .logo {
-    color: black;
+    color: blue;
     font-size: 1.5rem;
     font-weight: bold;
     font-style: italic;
@@ -24,9 +24,6 @@ nav a {
     text-decoration: none;
     color: black;
     padding: 0 1.5rem;
-}
-.hero {
-    background-color: gold;
 }
 
 .hero-container {
@@ -40,7 +37,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: black;
+    color: blue;
     padding: 0rem 2rem;
 }
 .column-left h1 {
@@ -57,14 +54,12 @@ button {
     font-size: 1rem;
     border: none;
     color: gold;
-    background-color: black;
-    cursor: pointer;
+    background-color: blue;
     border-radius: 50px;
 }
 button:hover {
     justify-content: center;
     align-items: center;
-    padding: 0rem 2rem;
 }
 .hero-image {
     width: 100%;
@@ -77,5 +72,51 @@ div a:hover {
 } 
 footer {
     background-color: black;
-    color: gold;
+    color: blue;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: blue;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: gold;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
