@@ -120,3 +120,6 @@ a {
     background: #ddd;
     color: black;
   }
+  .my div {
+    text-align: center;
+  }
